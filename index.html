@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Trọng Thuận</title>
+    <link rel="icon" href="./assets/images/icon.ico">
+
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/darkMode.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/icons/fontawesome-free-5.15.4-web/css/all.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Montserrat:ital,wght@0,500;0,700;0,800;0,900;1,100&family=Play:wght@700&family=Quicksand:wght@300;500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="app">
+        <!-- <audio src="./assets/musics/bg music.mp3" autoplay loop></audio> -->
+        <div id="preloader">
+            <div class="loading-text">
+                <p id="line1" class="visible" data-content="Script: Compiling . . ."></p>
+                <p id="line2" class="visible" data-content="Loading: [controller.js ./ assets ./ NguyenTrongThuan]"></p>
+                <p id="line3" class="visible" data-content="Script: Compiled Succesfully."></p>
+                <p id="line4" class="visible" data-content='Welcome "Guest" !'></p>
+                <p id="cursor-line" class="visible" data-content="█"><span class="typed-cursor">█</span></p>
+            </div>
+            <span class="skip-loader">-Skip-</span>
+        </div>
+        <div class="header">
+            <div class="header__title"><span data-text="N.T.THUAN">N.T.THUAN</span></div>
+            <div class="header__nav">
+                <div class="header__nav-item header__nav-item--active" data-order="0">
+                    <span>
+                        <i class="fas fa-home"></i>
+                    </span>
+                </div>
+                <div class="header__nav-item" data-order="1">
+                    <span>
+                        <i class="fas fa-address-card"></i>
+                    </span>
+                </div>
+                <div class="header__nav-item" data-order="2">
+                    <span>
+                        <i class="fas fa-pencil-ruler"></i>
+                    </span>
+                </div>
+                <div class="header__nav-item" data-order="3">
+                    <span>
+                        <i class="fas fa-tasks"></i>
+                    </span>
+                </div>
+                <!-- <div class="header-nav-item--no-active" data-order="4">
+                    <span>
+                        <i class="fas fa-hourglass-start"></i>
+                    </span>
+                </div> -->
+                <div class="header__nav-item" data-order="4">
+                    <span>
+                        <i class="fas fa-phone"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="mini-control">
+            <div class="top-control">
+                <i class="fas fa-arrow-circle-up"></i>
+            </div>
+            <div class="mode-control">
+                <label for="theme-mode-mini" class="theme-mode-btn-mini">
+                    <div class="theme-mode-control-mini">
+                        <i class="fas fa-sun mode-light-mini"></i>
+                        <i class="fas fa-moon mode-dark-mini"></i>
+                    </div>
+                </label>
+                <input type="checkbox" class="theme-mode-mini" name="theme-mode-mini" id="theme-mode-mini" checked>
+            </div>
+        </div>
+        <div class="container">
+            <div class="left-part">
+                <div class="left-part__container">
+                    <div class="left-part__avatar"></div>
+                    <div class="left-part__information">
+                        <h3 class="left-part__my-name">
+                            TRONG THUAN
+                        </h3>
+                        <span class="left-part__description">
+                            WEB & GAME DEVELOPER
+                        </span>
+                    </div>
+                    <div class="left-part__navigation">
+                        <ul class="left-part__menu">
+                            <li class="left-part__item left-part__item--active left-part__item--effect" data-order="0"><span>Home</span></li>
+                            <li class="left-part__item left-part__item--effect" data-order="1"><span>About</span></li>
+                            <li class="left-part__item left-part__item--effect" data-order="2"><span>Skills</span></li>
+                            <li class="left-part__item left-part__item--effect" data-order="3"><span>Projects</span></li>
+                            <!-- <li class="left-part__item left-part__item--effect" data-order="4"><span>Experience</span></li> -->
+                            <li class="left-part__item left-part__item--effect" data-order="4"><span>Contact</span></li>
+                        </ul>
+                    </div>
+                    <div class="mode-btn dark-active">
+                        <input type="checkbox" class="theme-mode" name="theme-mode" id="theme-mode" checked>
+                        <label for="theme-mode" class="theme-mode-btn">
+                            <div class="theme-mode-control">
+                                <i class="fas fa-sun mode-light"></i>
+                                <i class="fas fa-moon mode-dark"></i>
+                            </div>
+                            <div class="custom-btn custom-light">
+                                <i class="fas fa-cloud"></i>
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <div class="custom-btn custom-dark">
+                                <i class="fas fa-meteor"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="left-part__footer">
+                        © 2022 Designed by <a href="https://www.facebook.com/thuan.trong.564">Nguyen Trong Thuan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-part">
+                <div class="right-part__page home">
+                    <div class="home__background"></div>
+                    <div class="home__info">
+                        <div class="home__descriptions">
+                            <div class="home__avatar"></div>
+                            <h2 class="home__title">NGUYEN TRONG THUAN</h2>
+                            <span>When You Think It’s Too late, The Truth Is, It’s Still Early</span>
+                            <div class="home__downloadCV">DOWNLOAD CV
+                                <i class="fas fa-download"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-part__page about">
+                    <h3 class="about__title">ABOUT ME</h3>
+                    <h2 class="about__question">WHO AM I?</h2>
+                    <span class="about__description">
+                        Hello, my name is Nguyen Trong Thuan.
+                        I am currently studying at the University of Sciences - VietNam National University Ho Chi Minh city,
+                         majoring in Information Technology.
+                          I'm pursuing 2 fields of web programming and game programming.
+                           In the future I want to find a good environment where I can develop and improve my skills.
+                            In addition, I also want to create more relationships to support my work in the future.
+                    </span>
+                    <span class="about__description">
+                        I have some big projects coming up soon.
+                         All information about them will be published on this website. Follow them.
+                         If you want to cooperate with me, please contact me through 
+                         <span class="about__description--contact-forward">Contact</span> section.
+                    </span>
+                    <ul class="about__socials socials">
+                        <li class="about__social social"><a href="https://www.facebook.com/thuan.trong.564"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="about__social social"><a href="https://www.youtube.com/channel/UC9yqY32OWweRCVtyx-opv5w"><i class="fab fa-youtube"></i></a></li>
+                        <li class="about__social social"><a href="https://twitter.com/ThuanTrong612"><i class="fab fa-twitter"></i></a></li>
+                        <li class="about__social social"><a href="https://github.com/ntthuan060102github"><i class="fab fa-github"></i></a></li>
+                        <li class="about__social social"><a href="https://www.instagram.com/ntt06012k2/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    <div class="about__fields">
+                        <div class="grid wide">
+                            <div class="row">
+                                <div class="col l-4 c-12 m-4">
+                                    <div class="about__fe about__field">
+                                        <i class="far fa-window-restore"></i>
+                                        <span class="about__field-title">Web Design</span>
+                                    </div>
+                                </div>
+                                <div class="col l-4 c-12 m-4">
+                                    <div class="about__game about__field">
+                                        <i class="fas fa-gamepad"></i>
+                                        <span class="about__field-title">Game</span>
+                                    </div>
+                                </div>
+                                <div class="col l-4 c-12 m-4">
+                                    <div class="about__design about__field">
+                                        <i class="fas fa-drafting-compass"></i>
+                                        <span class="about__field-title">Graphic Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="right-part__page skills">
+                    <div class="skills-wrap">
+                        <div class="skills__title">MY SKILLS</div>
+                        <div class="gird wide">
+                            <div class="row">
+                                <div class="col l-6 c-12 m-12">
+                                    <div class="skills__progess-wrap">
+                                        <span class="skills__progess-title">HTML5</span>
+                                        <span class="skills__progress-rate"></span>
+                                        <div class="skills__progess">
+                                            <div class="skills__progess-bar skills__HTML5"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skills__progess-wrap">
+                                        <span class="skills__progess-title">CSS3</span>
+                                        <span class="skills__progress-rate"></span>
+                                        <div class="skills__progess">
+                                            <div class="skills__progess-bar skills__CSS3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skills__progess-wrap">
+                                        <span class="skills__progess-title">PhotoShop</span>
+                                        <span class="skills__progress-rate"></span>
+                                        <div class="skills__progess">
+                                            <div class="skills__progess-bar skills__PS"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-6 c-12 m-12">
+                                    <div class="skills__progess-wrap">
+                                        <span class="skills__progess-title">Python</span>
+                                        <span class="skills__progress-rate"></span>
+                                        <div class="skills__progess">
+                                            <div class="skills__progess-bar skills__PY"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skills__progess-wrap">
+                                        <span class="skills__progess-title">C++</span>
+                                        <span class="skills__progress-rate"></span>
+                                        <div class="skills__progess">
+                                            <div class="skills__progess-bar skills__CPP"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skills__progess-wrap">
+                                        <span class="skills__progess-title">React</span>
+                                        <span class="skills__progress-rate"></span>
+                                        <div class="skills__progess">
+                                            <div class="skills__progess-bar skills__jQuery"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="gird wide">
+                        <div class="row">
+                            <div class="col l-3 m-6 c-12">
+                                <div class="slide__content">
+                                    <span class="slide__title">112</span>
+                                    <span class="slide__description">CUPS OF COFFEE</span>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="slide__content">
+                                    <span class="slide__title">8</span>
+                                    <span class="slide__description">PROJECTS</span>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="slide__content">
+                                    <span class="slide__title">5</span>
+                                    <span class="slide__description">PROGRAMING LANGUAGES</span>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="slide__content">
+                                    <span class="slide__title">1</span>
+                                    <span class="slide__description">CERTIFICATES</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-part__page projects">
+                    <div class="projects__title">PROJECTS</div>
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-6 c-12 m-12"> 
+                                <span class="projects__project-name">Unity Engine, C#: Cube Jump</span>
+                                <iframe class="projects__project" src="https://www.youtube.com/embed/N0BUvvX7Gus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <a href="https://github.com/ntthuan060102github/Game-Cube-Jump" class="projects__view-source">View details</a>
+                            </div>
+                            <div class="col l-6 c-12 m-12">            
+                                <span class="projects__project-name">Socket Programming: V-GOLD Application</span>
+                                <iframe class="projects__project" src="https://www.youtube.com/embed/nBwMibs6c9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <a href="https://github.com/ntthuan060102github/V-Gold---Socket-Programing" class="projects__view-source">View details</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col l-6 c-12 m-12">
+                                <span class="projects__project-name">Web Design: SetSail</span>
+                                <div class="projects__project" style="background-image: url('./assets/images/setsail.png')"></div>
+                                <a href="https://ntthuan060102github.github.io/Setsail---Clone/" class="projects__view-source">View details</a>
+                            </div>
+                            <div class="col l-6 c-12 m-12">
+                                <span class="projects__project-name">Python: Game Racing Arcade</span>
+                                <iframe class="projects__project" src="https://www.youtube.com/embed/NvjnVBy6bok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <a href="https://drive.google.com/drive/folders/1Ohjx_M_dGgUrbH0hgDUIn_HVWs8K6K64?usp=sharing" class="projects__view-source">View details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="right-part__page experience">
+                    In the future I have some big projects related to front-end and games. 
+                    And all those projects will be published on this website. Follow them.
+                </div> -->
+                <div class="right-part__page contact">
+                    <div class="contact-wrap">
+                        <div class="gird wide">
+                            <div class="row">
+                                <div class="col l-5 c-12 m-12">
+                                    <div class="contact__title">CONTACT</div>
+                                    <div class="contact__infos">
+                                        <div class="contact__info">
+                                            Street 3, Phu Tuc, Krong Pa, Gia Lai, VietNam
+                                        </div>
+                                        <div class="contact__info">
+                                            Email: <a href="mailto:ntt06012k2@gmail.com">ntt06012k2@gmail.com</a>
+                                        </div>
+                                        <div class="contact__info">
+                                            Phone: <a href="tel:0328221179">0328221179</a>
+                                        </div>
+                                    </div>
+                                    <ul class="contact__socials socials">
+                                        <li class="contact__social social"><a href="https://www.facebook.com/thuan.trong.564"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li class="contact__social social"><a href="https://www.youtube.com/channel/UC9yqY32OWweRCVtyx-opv5w"><i class="fab fa-youtube"></i></a></li>
+                                        <li class="contact__social social"><a href="https://twitter.com/ThuanTrong612"><i class="fab fa-twitter"></i></a></li>
+                                        <li class="contact__social social"><a href="https://github.com/ntthuan060102github"><i class="fab fa-github"></i></a></li>
+                                        <li class="contact__social social"><a href="https://www.instagram.com/ntt06012k2/"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col l-7 c-12 m-12">
+                                    <div class="contact__forms">
+                                        <div class="contact__form">
+                                            <input name="First name" type="text" class="contact__form-input" placeholder=" ">
+                                            <label for="First name" class="contact__label">First name</label>
+                                        </div>
+                                        <div class="contact__form">
+                                            <input name="Last name" type="text" class="contact__form-input" placeholder=" ">
+                                            <label for="Last name" class="contact__label">Last name</label>
+                                        </div>
+                                        <div class="contact__form">
+                                            <input name="Email" type="text" class="contact__form-input" placeholder=" ">
+                                            <label for="Email" class="contact__label">Email</label>
+                                        </div>
+                                        <div class="contact__form">
+                                            <textarea name="Message" cols="30" rows="8" class="contact__form-input" placeholder=" "></textarea>
+                                            <!-- <textarea type="text" class="contact__form-input" placeholder=" " rows="5" multiline cols="20">
+                                            </textarea> -->
+                                            <label for="Message" class="contact__label">Message</label>
+                                        </div>
+                                        <div class="contact__submit-btn">
+                                            Submit
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/controller.js"></script>
+</body>
+</html>

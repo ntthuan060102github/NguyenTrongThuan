@@ -1,0 +1,217 @@
+/* Mobile & Tablet */
+@media (max-width: 1059px){
+    *{
+        /* cursor: none; */
+    }
+    body{
+        height: calc(100vh - var(--header-height));
+        /* width: 100vw; */
+    }
+    .header{
+        display: flex;
+    }
+    .container{
+        position: absolute;
+        top: var(--header-height);  
+        left: 0;
+        right: 0;
+    }
+    .left-part{
+        display: none;
+    }
+    .right-part{
+        position: unset;
+        width: 100%;
+        margin: 0;
+    }
+    .home__info{
+        flex-direction: column;
+        text-align: center;
+        left: 0;
+        right: 0;
+        /* top: 30%; */
+        top: 45vh;
+        transform: translate(0%, -50%);
+    }
+    .home__avatar{
+        display: block;
+        margin-bottom: 12px;
+    }
+    .home__title,
+    .home__downloadCV{
+        --size: 70px;
+        margin-left: 0;
+    }
+    .home__descriptions > span{
+        margin-left: 0;
+    }
+
+    .about{
+        padding: 70px 10px;
+    }
+    .about__description{
+        margin: 0 53px 20px;
+        /* text-align: center; */
+    }
+    .projects{
+        /* height: 100px; */
+        padding: 70px 0 50px;
+        /* padding: 50px 0; */
+    }
+    .about__fields{
+        margin: 30px 60px 0;
+    }
+    .projects__project-name{
+        font-size: 20px;
+        text-align: center;
+        margin: 60px 0 8px;
+    }
+    .contact__submit-btn{
+        width: 100%;
+    }
+    .projects__view-source{
+        width: 100%;
+        margin: 12px 0 0;
+    }
+    .contact__info{
+        text-align: center;
+    }
+    .contact__socials{
+        text-align: center;
+        transform: translateX(-5px);
+    }
+    .mini-control{
+        display: block;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1059px) and (min-width:740px){
+    .header__title > span{
+        font-size: 32px;
+    }
+    .slide__content{
+        margin: 60px 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px){
+    :root{
+        --header-height: 60px;
+    }
+    .skills-wrap,
+    .right-part__page{
+        padding-top: 0;
+    }
+    .home__title{
+        --size: 50px;
+    }
+    .header__nav-item .fas{
+        font-size: 16px;
+    }
+    .header__nav-item--active .fas{
+        font-size: 22px;
+    }
+    .about{
+        padding: 30px 3px;
+    }
+    .about__title{
+        font-size: 48px;
+    }
+    .about__question{
+        font-size: 28px;
+    }
+    .slide__content{
+        margin: 30px 0;
+    }
+    .skills__title{
+        margin-top: 0;
+        padding-top: 40px;
+    }
+    .projects__title{
+        padding-top: 40px;
+    }
+    .projects__project-name{
+        font-size: 16px;
+        text-align: center;
+        margin: 40px 0 8px;
+    }
+    .contact-wrap{
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 960px) and (min-width:740px){
+
+}
+
+@media (max-width: 1300px) and (min-width: 1059px){
+
+}
+
+@media (max-width: 480px){
+    .home__title{
+        --size: 46px;
+    }
+    .home__title > span{
+        font-size: 14px;
+    }
+}
+@media (max-width: 500px){
+    .header__title{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .header__nav{
+        margin-right: 24px;
+        display: flex;
+        align-items: center;
+    }
+    .header__nav-item{
+        padding: 6px
+    }
+    .about__title{
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+    .about__question{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .about__description{
+        font-size: 16px;
+        margin: 0 28px 20px;
+    }
+}
+@media (max-width: 400px){
+    .home__title{
+        --size: 40px;
+    }
+    .home__title > span{
+        font-size: 12px;
+    }
+    .header__title{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .header__nav{
+        margin-right: 16px;
+        display: flex;
+        align-items: center;
+    }
+    .header__title > a{
+        font-size: 16px;
+    }
+    .header__nav-item{
+        padding: 6px
+    }
+    /* .home__info{
+        flex-direction: column;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 15%;
+        transform: unset;
+    } */
+}
