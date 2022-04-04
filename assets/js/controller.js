@@ -110,10 +110,10 @@ sendMessageBtn.onclick = function() {
     console.log(data)
 }
 
-const downloadCVBtn = $('.home__downloadCV')
-downloadCVBtn.onclick = function() {
-    alert('Coming soon!')
-}
+// const downloadCVBtn = $('.home__downloadCV')
+// downloadCVBtn.onclick = function() {
+//     alert('Coming soon!')
+// }
 
 function loadScript(target, subObj = "", subIdx = -1) {
     const content = target.dataset.content
