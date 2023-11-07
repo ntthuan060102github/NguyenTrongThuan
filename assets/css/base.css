@@ -434,33 +434,33 @@ body{
     height: 100%;
     border-radius: 5px;
 }
-.skills__HTML5,
-.skills__HTML5::after{
-    width: 85%;
+.skills__MERN,
+.skills__MERN::after{
+    width: 60%;
     background-color: #2c98f0;
 }
-.skills__CSS3,
-.skills__CSS3::after{
-    width: 80%;
+.skills__DBMS,
+.skills__DBMS::after{
+    width: 70%;
     background-color: #f9bf3f;
 }
-.skills__PS,
-.skills__PS::after{
-    width: 20%;
+.skills__ETL,
+.skills__ETL::after{
+    width: 50%;
     background-color: #2fa499;
 }
 .skills__PY,
 .skills__PY::after{
-    width: 50%;
+    width: 85%;
     background-color: #ec5453;
 }
-.skills__CPP,
-.skills__CPP::after{
-    width: 70%;
+.skills__DOCKER,
+.skills__DOCKER::after{
+    width: 50%;
     background-color: #a84cb8;
 }
-.skills__jQuery,
-.skills__jQuery::after{
+.skills__C,
+.skills__C::after{
     width: 60%;
     background-color: #4054b2;
 }
@@ -525,6 +525,17 @@ body{
 .contact__submit-btn:hover,
 .projects__view-source:hover{
     background-color: #227cc5;
+}
+.projects__more {
+    margin-top: 32px;
+    font-size: 18px;
+}
+.projects__more-icon {
+    display: inline-block;
+}
+.projects__more-icon > a {
+    padding: 8px;
+    color: var(--text-color-3);
 }
 .contact{
     display: block;
