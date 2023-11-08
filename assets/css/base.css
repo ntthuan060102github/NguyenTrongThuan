@@ -529,6 +529,7 @@ body{
 .projects__more {
     margin-top: 32px;
     font-size: 18px;
+    transition: 0.05s linear !important;
 }
 .projects__more-icon {
     display: inline-block;
@@ -536,6 +537,10 @@ body{
 .projects__more-icon > a {
     padding: 8px;
     color: var(--text-color-3);
+    transition: 0.05s linear !important;
+}
+.projects__more-icon:hover > a{
+    color: #1c99e6;
 }
 .contact{
     display: block;
@@ -624,7 +629,7 @@ body{
     transition: 0.25s ease !important;
     background-color: var(--bg-color-2);
 }
-.contact__form:nth-child(4) .contact__form-input{
+.contact__form:nth-child(3) .contact__form-input{
     height: 160px;
     padding: 28px 24px;
 }
@@ -641,7 +646,7 @@ body{
     pointer-events: none;
     transition: 0.25s ease !important;
 }
-.contact__form:nth-child(4) .contact__label{
+.contact__form:nth-child(3) .contact__label{
     top: 28px;
 }
 .contact__form-input:not(:placeholder-shown) + .contact__label,
