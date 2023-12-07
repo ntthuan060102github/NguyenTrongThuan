@@ -128,7 +128,7 @@
     color: var(--text-color-2);
 }
 .dark-theme .slide{
-    background-image: url(../images/slide.jpg);
+    background-image: url(../images/slide-dark.jpg);
 }
 .dark-theme .mini-control{
     background-image: -webkit-linear-gradient(90deg,#264476 30%, #0b53f0 90%);
